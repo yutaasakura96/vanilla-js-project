@@ -457,6 +457,75 @@ cursor: pointer;
   letter-spacing: .1rem;
   cursor: pointer;
 }
+
+/* Dropdown 5 */
+.dropdown-5 {
+  width: 30rem;
+  height: 32rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2.5rem;
+}
+
+.account-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-input-group input {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(191, 213, 240, 0.4);
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  color: #444;
+
+}
+
+.account-input-group input::placeholder {
+  color: #888;
+}
+
+.check {
+  margin-top: -2rem;
+}
+
+.check label {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.account-form button {
+  width: 100%;
+  height: 4rem;
+  background-color: #2d2dcf;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.account-form p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.account-form p span {
+  color: #2371ff;
+  cursor: pointer;
+  font-weight: 400;
+}
+
 .nav-btn {
   width: 13rem;
   height: 5rem;
