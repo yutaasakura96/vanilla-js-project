@@ -191,14 +191,15 @@ border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
   flex-wrap: wrap;
 }
 
-.dropdown-service {
+.dropdown-service, .product {
   display:  flex;
   align-items: center;
   margin-bottom: 3.5rem;
   cursor: pointer;
 }
 
-.dropdown-service i {
+.dropdown-service i,
+.product i {
   width: 5.5rem;
   height: 5.5rem;
 
@@ -213,31 +214,31 @@ border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
   transition: transform 0.3s;
 }
 
-.dropdown-service:hover i {
+.dropdown-service:hover i, .product:hover i {
   transform: scale(1.1);
 }
 
-.dropdown-service:nth-child(1) i {
+.dropdown-service:nth-child(1) i, .product:nth-child(1) i {
   background: linear-gradient(to right, #b150f1, #7e23da);
   box-shadow: 0 .5rem 2rem rgba(126, 35, 218, 0.3);
 }
 
-.dropdown-service:nth-child(2) i {
+.dropdown-service:nth-child(2) i, .product:nth-child(2) i  {
   background: linear-gradient(to right, #31dca1, #23d683);
   box-shadow: 0 .5rem 2rem rgba(35, 214, 131, 0.3);
 }
 
-.dropdown-service:nth-child(3) i {
+.dropdown-service:nth-child(3) i, .product:nth-child(3) i  {
   background: linear-gradient(to right, #3f51ec, #2d2dcf);
   box-shadow: 0 .5rem 2rem rgba(45, 45, 207, 0.3);
 }
 
-.dropdown-service:nth-child(4) i {
+.dropdown-service:nth-child(4) i, .product:nth-child(4) i  {
   background: linear-gradient(to right, #00d3e0, #03b4d8);
   box-shadow: 0 .5rem 2rem rgba(3, 180, 216, 0.3);
 }
 
-.dropdown-service:nth-child(5) i {
+.dropdown-service:nth-child(5) i, .product:nth-child(5) i  {
   background: linear-gradient(to right, #ff9625, #fa751c);
   box-shadow: 0 .5rem 2rem rgba(250, 117, 28, 0.3);
 }
@@ -252,39 +253,39 @@ border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
   box-shadow: 0 .5rem 2rem rgba(32, 37, 44, 0.3);
 }
 
-.dropdown-service-item {
+.dropdown-service-item, .product div {
   display: flex;
   flex-direction: column;
 }
 
-.dropdown-service-item span {
+.dropdown-service-item span, .product div span {
   font-size: 1.6rem;
 }
 
-.dropdown-service-item span:nth-child(1) {
+.dropdown-service-item span:nth-child(1), .product div span:nth-child(1) {
   font-family: "Mooli", cursive;
   font-weight: bold;
   letter-spacing: .1rem;
   text-transform: uppercase;
 }
 
-.dropdown-service:nth-child(1) .dropdown-service-item span:nth-child(1) {
+.dropdown-service:nth-child(1) .dropdown-service-item span:nth-child(1), .product:nth-child(1) div span:nth-child(1) {
   color: #b150f1;
 }
 
-.dropdown-service:nth-child(2) .dropdown-service-item span:nth-child(1) {
+.dropdown-service:nth-child(2) .dropdown-service-item span:nth-child(1), .product:nth-child(2) div span:nth-child(1) {
   color: #31dca1;
 }
 
-.dropdown-service:nth-child(3) .dropdown-service-item span:nth-child(1) {
+.dropdown-service:nth-child(3) .dropdown-service-item span:nth-child(1), .product:nth-child(3) div span:nth-child(1) {
   color: #3f51ec;
 }
 
-.dropdown-service:nth-child(4) .dropdown-service-item span:nth-child(1) {
+.dropdown-service:nth-child(4) .dropdown-service-item span:nth-child(1), .product:nth-child(4) div span:nth-child(1) {
   color: #00d3e0;
 }
 
-.dropdown-service:nth-child(5) .dropdown-service-item span:nth-child(1) {
+.dropdown-service:nth-child(5) .dropdown-service-item span:nth-child(1), .product:nth-child(5) div span:nth-child(1) {
   color: #ff9626;
 }
 
@@ -296,7 +297,7 @@ border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
   color: #282c28;
 }
 
-.dropdown-service-item span:nth-child(2) {
+.dropdown-service-item span:nth-child(2), .product div span:nth-child(2) {
   font-weight: 300;
   color: #6a6f72;
 }
@@ -389,6 +390,32 @@ border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
   text-align: center;
 }
 
+/* Dropdown 3 */
+.dropdown-3 {
+  width: 40rem;
+  height: 47rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.product {
+  margin: 1.6rem 0;
+}
+
+.dropdown-3 button {
+  width: 100%;
+  height: 4rem;
+  background-color: #9544ec;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: .1rem;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(1rem);
+}
 .nav-btn {
   width: 13rem;
   height: 5rem;
