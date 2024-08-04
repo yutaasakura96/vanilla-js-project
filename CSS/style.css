@@ -416,6 +416,47 @@ border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
   cursor: pointer;
   transform: translateY(1rem);
 }
+
+/* Dropdown 4 */
+.dropdown-4 {
+  width: 28rem;
+  height: 33rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.contact-options div {
+margin: 1.4rem 0;
+cursor: pointer;
+}
+
+.contact-options i {
+  width: 4rem;
+  font-size: 2rem;
+  color: #3293ff;
+}
+
+.contact-options span {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #3293ff;
+  letter-spacing: .1rem;
+}
+
+.dropdown-4 button {
+  width: 100%;
+  height: 4rem;
+  background-color: #2371ff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
 .nav-btn {
   width: 13rem;
   height: 5rem;
