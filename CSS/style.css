@@ -1,0 +1,112 @@
+/* Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Mukta", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Banner */
+.banner {
+  position: absolute;
+  top: 18%;
+  left: 20%;
+  z-index: 4;
+}
+
+.banner h1 {
+  font-family: "Mooli",cursive;
+  font-size: 13rem;
+  color: #fff;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.banner h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  margin: 0 0 3rem 1rem;
+}
+
+.banner button {
+  width: 15rem;
+  height: 5rem;
+  background: linear-gradient(to right, #aa3fec, #8430ea);
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.banner button:hover {
+  transform: translateY(-.2rem);
+}
+/* Backgrounds */
+.backgrounds div {
+  position: absolute;
+}
+
+.bg-main {
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(to left, transparent, #4400c5, #4400ab);
+  top: -95%;
+  left: -10%;
+  transform: rotateZ(-15deg)skew(30deg);
+  border-radius: 0 0 0 10rem;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.bg-1 {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(transparent 60%, #ff26ac, #f724db);
+  top: -40%;
+  right: -10%;
+  transform: rotateZ(-15deg)skew(30deg);
+  border-radius: 0 0 0 5rem;
+}
+
+.bg-2 {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(transparent 70%, #ca5995, #fe945a);
+  top: -60%;
+  right: 10%;
+  transform: rotateZ(-15deg)skew(30deg);
+  border-radius: 0 0 0 5rem;
+  z-index: 2;
+  opacity: 0.4;
+  box-shadow: 7rem 4rem 6rem rgba(0, 0, 0, 0.9);
+}
