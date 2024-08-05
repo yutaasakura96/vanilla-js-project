@@ -39,12 +39,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s;
+}
+.navbar.sticky {
+  height: 8rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 10rem rgba(130, 162, 235, 0.6);
 }
 
 /* Logo */
 .logo {
   display: flex;
   flex-direction: column;
+}
+
+.logo span {
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .logo span:nth-child(1) {
@@ -71,8 +81,9 @@ header {
   transform: translate(2.2rem, -1rem);
 }
 
-.logo span {
-  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+.sticky .logo span {
+  color: #092627;
+  text-shadow: none;
 }
 
 /* Nav Items */
@@ -89,7 +100,7 @@ header {
 }
 
 /* Triangle part in the dropdown pointing to the nav home */
-.nav-item::after {
+.nav-item:not(:last-child)::after {
   content: '';
   position: absolute;
   top: 2.9rem;
@@ -108,12 +119,21 @@ header {
   visibility: visible;
 }
 
+.sticky .nav-item::after {
+  top: 6rem;
+}
+
 .nav-link {
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.1rem;
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.sticky .nav-link {
+  color: #092627;
+  text-shadow: none;
 }
 
 /* Dropdown 1*/
@@ -132,6 +152,11 @@ header {
 .nav-item:hover .dropdown{
   opacity: 1;
   visibility: visible;
+}
+
+.sticky .dropdown {
+  top: 8rem;
+  box-shadow: 0 1rem 10rem rgba(130, 162, 235, 0.4);
 }
 
 .dropdown-1 {
@@ -545,6 +570,12 @@ cursor: pointer;
 .nav-btn:hover {
   transform: translateY(-.2rem);
 }
+
+.sticky .nav-btn {
+  background: linear-gradient(to right, #ff45b9, #ff3598);
+  box-shadow: none;
+  color: #fff;
+}
 /* Banner */
 .banner {
   position: absolute;
@@ -778,7 +809,7 @@ cursor: pointer;
   border-radius: 15rem;
   position: absolute;
   bottom: 5%;
-  right: 12%;
+  left: 12%;
   opacity: .3;
   transform: rotateZ(-10deg);
 }
