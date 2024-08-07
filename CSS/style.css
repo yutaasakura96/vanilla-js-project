@@ -813,3 +813,70 @@ cursor: pointer;
   opacity: .3;
   transform: rotateZ(-10deg);
 }
+
+/* Projects */
+.projects {
+  width: 100%;
+  height: 100%;
+  padding: 25rem 0 25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h1 {
+  font-family: "Mooli", cursive;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  color: #ff4800;
+}
+
+.projects p {
+  width: 90rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #5e728f;
+  margin-bottom: 4rem;
+}
+
+.filter-nav {
+  width: 80%;
+  height: 10rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 8rem rgba(130, 162, 235, 0.2);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 6rem;
+}
+
+.filter-nav-link {
+  width: 14rem;
+  height: 5rem;
+  background-color: #f2f4f5;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #919daa;
+  letter-spacing: 0.1rem;
+  transition: all .3s;
+}
+
+.filter-nav-link:hover {
+  background-color: #dadfe2;
+  transform: translateY(0.1rem);
+}
+
+.active {
+  background-color: #ff4c01;
+  color: #fff;
+}
+
+.active:hover {
+  background-color: #fc611f;
+}
