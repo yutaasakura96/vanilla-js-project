@@ -818,14 +818,18 @@ cursor: pointer;
 .projects {
   width: 100%;
   height: 100%;
-  padding: 25rem 0 25rem 0;
+  padding: 25rem 0 15rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.project.hide {
+  display: none;
+}
+
 .projects h1 {
-  font-family: "Mooli", cursive;
+  font-family: 'Mooli', cursive;
   font-size: 6rem;
   margin-bottom: 4rem;
   color: #ff4800;
@@ -864,12 +868,12 @@ cursor: pointer;
   text-transform: uppercase;
   color: #919daa;
   letter-spacing: 0.1rem;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .filter-nav-link:hover {
   background-color: #dadfe2;
-  transform: translateY(0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .active {
@@ -879,4 +883,206 @@ cursor: pointer;
 
 .active:hover {
   background-color: #fc611f;
+}
+
+.projects-list {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 33rem;
+  height: 33rem;
+  position: relative;
+  margin: 5rem;
+  cursor: pointer;
+}
+
+.project.hide {
+  display: none;
+}
+
+.project img {
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  border-radius: 1rem;
+}
+
+.project img:nth-child(1) {
+  width: 22rem;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.project img:nth-child(2) {
+  width: 20rem;
+  height: 30rem;
+  left: -5%;
+  transform: translateY(-50%);
+  box-shadow: 0 3rem 8rem rgba(130, 162, 235, 0.9);
+  z-index: 1;
+}
+
+.project img:nth-child(3) {
+  width: 100%;
+  height: 70%;
+  right: -10%;
+  transform: translateY(-50%);
+  box-shadow: 0 3rem 8rem rgba(130, 162, 235, 0.9);
+}
+
+/* Templates */
+.templates {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #8430e1, #8430ea, #4c0c9b);
+  position: relative;
+}
+
+.templates::before {
+  content: '';
+  width: 80rem;
+  height: 80rem;
+  background: linear-gradient(to bottom, transparent, #8430ea, #8340ea);
+  z-index: 4;
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  filter: blur(7rem);
+}
+
+.templates-left {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25rem 10rem 0 10rem;
+}
+
+.templates-left h1 {
+  font-family: 'Mooli', cursive;
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+}
+
+.templates-left p {
+  width: 60rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #e2e2e2;
+  text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 7rem;
+}
+
+.templates-btn {
+  width: 30rem;
+  height: 6rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #aa3fec;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+
+
+.templates-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.templates-right img {
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.templates-right img:nth-child(1) {
+  width: 40rem;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0 2rem 7rem rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+}
+
+.templates-right img:nth-child(2) {
+  width: 20rem;
+  top: 20%;
+  left: 18%;
+  z-index: 1;
+  box-shadow: 0 1rem 8rem rgba(0, 0, 0, 0.6);
+}
+
+.templates-right img:nth-child(3) {
+  width: 70rem;
+  top: 22%;
+  right: 5%;
+  box-shadow: 0 1rem 8rem rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+
+.play-button {
+  position: absolute;
+  top: 37%;
+  left: 23%;
+  z-index: 3;
+}
+
+.play-btn {
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.play-btn:hover {
+  transform: scale(1.2);
+}
+
+.play-btn::before {
+  content: '';
+  width: 26rem;
+  height: 26rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.play-btn:hover::before {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.play-btn i {
+  font-size: 7rem;
+  color: #20252c;
 }
