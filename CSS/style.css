@@ -1107,6 +1107,14 @@ cursor: pointer;
   position: relative;
 }
 
+.x-btn i {
+  position: absolute;
+  top: -6rem;
+  right: 0;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
 .controls-wrapper {
  width: 100%;
  position: absolute;
@@ -1155,9 +1163,85 @@ cursor: pointer;
   transform: translateY(-50%);
 }
 
+.video-controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.options {
+  display: flex;
+  width: calc(100% / 3);
+  align-items: center;
+}
+
+.options:nth-child(2) {
+  justify-content: center;
+}
+
+.options:nth-child(3) {
+  justify-content: flex-end;
+}
+
+.options button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.options i {
+  font-size: 1.9rem;
+}
+
+.options i, .options span {
+  width: 100%;
+  height: 100%;
+  line-height: 4rem;
+}
+
+
+.options input {
+  height: .4rem;
+  width: 7.5rem;
+  margin-right: 1rem;
+}
+
+.video-timer {
+  color: #fff;
+}
+
+.playback-content {
+  position: relative;
+}
+
+.speed-options {
+  width: 9.5rem;
+  position: absolute;
+  bottom: 4rem;
+  left: -4rem;
+  background-color: #fff;
+  border-radius: .4rem;
+}
+
+.speed-options div {
+  font-size: 1.4rem;
+  padding: .5rem 0 .5rem 1.5rem;
+  cursor: pointer;
+}
+
+.active-option {
+  background-color: #2289ff;
+  color: #fff;
+}
+
 video {
   width: 100%;
   height: 100%;
   box-shadow: 0 1rem 10rem rgba(20, 52, 129, 0.7);
-
 }
