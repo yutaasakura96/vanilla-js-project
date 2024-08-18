@@ -43,6 +43,8 @@ const volumeSlider = document.querySelector('.left input');
 const speedBtn = document.querySelector('.playback-speed span');
 const speedOptions = document.querySelector('.speed-options');
 const speedOptionsItems = document.querySelectorAll('.speed-options div');
+const picInPicBtn = document.querySelector('.pic-in-pic span')
+const fullscreenBtn = document.querySelector('.fullscreen i')
 
 
 // Volume
@@ -120,4 +122,14 @@ speedOptionsItems.forEach((option) => {
     speedOptions.querySelector('.active-option').classList.remove('active-option')
     option.classList.add('active-option')
   })
+})
+
+// Picture in Picture Mode
+picInPicBtn.addEventListener(('click'), () => {
+  mainVideo.requestPictureInPicture()
+})
+
+// Full screen mode
+fullscreenBtn.addEventListener(('click'), () => {
+  mainVideo.requestFullscreen();
 })
