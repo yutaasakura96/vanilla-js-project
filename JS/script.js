@@ -45,6 +45,10 @@ const speedOptions = document.querySelector('.speed-options');
 const speedOptionsItems = document.querySelectorAll('.speed-options div');
 const picInPicBtn = document.querySelector('.pic-in-pic span')
 const fullscreenBtn = document.querySelector('.fullscreen i')
+const videoTimeline = document.querySelector('.video-timeline')
+const currentVidTime = document.querySelector('.current-time');
+const videoDuration = document.querySelector('.video-duration')
+
 
 
 // Volume
@@ -69,14 +73,38 @@ volumeSlider.addEventListener('input', (e) => {
   }
 })
 
+// Video Timeline
+videoTimeline.addEventListener(("click"), (e) => {
+  let timelineWidth = videoTimeline.clientWidth;
+  mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
+});
+
+mainVideo.addEventListener('loadeddata', () => {
+  videoDuration.innerText = formatTime(mainVideo.duration);
+})
 
 // Progress Bar
+const formatTime = (time) => {
+  let seconds = Math.floor(time % 60);
+  let minutes = Math.floor(time / 60) % 60;
+  let hours = Math.floor(time / 3600);
+
+  seconds = seconds < 10 ? `0${seconds}` : seconds
+  minutes = minutes < 10 ? `0${minutes}` : minutes
+  hours = hours < 10 ? `0${hours}` : hours
+
+  if (hours == 0) {
+    return `${minutes}:${seconds}`
+  } else {
+    `${hours}:${minutes}:${seconds}`
+  }
+}
+
 mainVideo.addEventListener('timeupdate', (e) => {
   let {currentTime, duration} = e.target;
-
   let percent = (currentTime / duration) * 100;
-
   progressBar.style.width = `${percent}%`
+  currentVidTime.innerText = formatTime(currentTime);
 });
 
 // Play/Pause Button
