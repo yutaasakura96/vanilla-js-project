@@ -1227,6 +1227,15 @@ cursor: pointer;
   left: -4rem;
   background-color: #fff;
   border-radius: .4rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.speed-options.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .speed-options div {
