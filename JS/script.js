@@ -31,13 +31,29 @@ filterLink.addEventListener(('click'), (e) => {
 });
 
 // Video
+// Elements
 const videoContainer = document.querySelector('.video-container');
 const mainVideo = document.querySelector('video');
 const playPauseBtn = document.querySelector('.play-pause i');
 const progressBar = document.querySelector('.progress-bar');
 const skipBackward = document.querySelector('.skip-backward i');
 const skipForward = document.querySelector('.skip-forward i');
+const volumeBtn = document.querySelector('.volume i');
 
+
+// Volume Button
+volumeBtn.addEventListener('click', () => {
+  if(!volumeBtn.classList.contains('fa-volume-high')) {
+    mainVideo.volume = 0.5;
+    volumeBtn.classList.replace('fa-volume-xmark', 'fa-volume-high')
+  } else {
+    mainVideo.volume = 0.0
+    volumeBtn.classList.replace('fa-volume-high', 'fa-volume-xmark')
+  }
+})
+
+
+// Progress Bar
 mainVideo.addEventListener('timeupdate', (e) => {
   let {currentTime, duration} = e.target;
 
@@ -46,6 +62,7 @@ mainVideo.addEventListener('timeupdate', (e) => {
   progressBar.style.width = `${percent}%`
 });
 
+// Play/Pause Button
 playPauseBtn.addEventListener('click', () => {
   if(mainVideo.paused) {
     mainVideo.play()
@@ -62,6 +79,7 @@ mainVideo.addEventListener('pause', () => {
   playPauseBtn.classList.replace('fa-pause', 'fa-play')
 });
 
+// Skip Forward/Backward Button
 skipBackward.addEventListener('click', () => {
   mainVideo.currentTime -= 5
 })
