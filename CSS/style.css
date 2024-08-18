@@ -1163,6 +1163,16 @@ cursor: pointer;
   transform: translateY(-50%);
 }
 
+.progress-area span,
+.progress-bar::before {
+  display: none;
+}
+
+.video-timeline:hover .progress-area span,
+.video-timeline:hover .progress-bar::before {
+  display: block;
+}
+
 .video-controls {
   width: 100%;
   display: flex;
