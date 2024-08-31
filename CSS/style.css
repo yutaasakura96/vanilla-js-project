@@ -1377,5 +1377,96 @@ video {
   border-radius: 30%;
   filter: blur(3rem);
   opacity: 0.7;
+}
 
+footer {
+  width: 100%;
+  height: 60vh;
+  padding: 10rem 0 3rem 0;
+}
+
+.footer-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-social-media {
+  width: 50%;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item h3 {
+  font-family: 'Mooli', cursive;
+  font-size: 2.5rem;
+  color: #007aaa;
+  margin-bottom: 2rem;
+}
+
+.icons i {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.icons i:nth-child(1) {
+  color: #1877f2;
+}
+
+.icons i:nth-child(2) {
+  color: #c32aa3;
+}
+
+.icons i:nth-child(3) {
+  color: #0a66c2;
+}
+
+.icons i:nth-child(4) {
+  color: #1da1f2;
+}
+
+.icons i:nth-child(5) {
+  color: #bd081c;
+}
+
+.icons i:nth-child(6) {
+  color: #ea4c89;
+}
+
+.icons i:nth-child(7) {
+  color: #ff0000;
+}
+
+.footer-item a {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+  color: #394353;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: .2rem solid rgba(0, 122, 170, .2);
+  padding-top: 1rem;
+}
+
+.footer-bottom a {
+  font-family: "Croissant One", cursive;
+  font-size: 2rem;
+  color: #007aaa;
 }
