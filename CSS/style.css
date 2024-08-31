@@ -1046,7 +1046,7 @@ cursor: pointer;
   position: absolute;
   top: 37%;
   left: 23%;
-  z-index: 3;
+  z-index: 5;
 }
 
 .play-btn {
@@ -1099,6 +1099,13 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.video-container.show-video {
+  opacity: 1;
+  visibility: visible;
 }
 
 .video {
@@ -1120,6 +1127,16 @@ cursor: pointer;
  position: absolute;
  left: 0;
  bottom: -5.5rem;
+ opacity: 0;
+ visibility: hidden;
+ z-index: 10;
+ transition: all 0.08s ease;
+}
+
+.video-container.show-controls .controls-wrapper{
+bottom: 0;
+opacity: 1;
+visibility: visible;
 }
 
 .video-timeline {
