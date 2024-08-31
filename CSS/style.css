@@ -1281,3 +1281,101 @@ video {
   height: 100%;
   box-shadow: 0 1rem 10rem rgba(20, 52, 129, 0.7);
 }
+
+
+/* Subscribe */
+.subscribe {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #8430ea, #8430ea, #4c0c9b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 50rem;
+}
+
+.subscribe-wrapper {
+  width: 80rem;
+  height: 50rem;
+  background-color: #231d34;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.subscribe-icon span {
+  font-size: 10rem;
+  color: #e03a5b;
+}
+
+.subscribe-wrapper h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #aaa;
+  margin-top: -5rem;
+}
+.subscribe-wrapper p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #999;
+  margin-top: -5rem;
+}
+
+.subscribe-input-group {
+  width: 50rem;
+  height: 5.5rem;
+  position: relative;
+}
+
+.subscribe-input-group input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1629;
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #a0c5fd;
+}
+
+.subscribe-input-group input::placeholder {
+  font-size: 1.6rem;
+  color: #a0c5fd;
+}
+
+.subscribe-input-group button {
+  width: 16rem;
+  height: 100%;
+  background-color: #644def;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .2rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.subscribe-shadow {
+  width: 80%;
+  height: 12rem;
+  background-color: #1b1629;
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+  transform: translateX(-50%) rotateX(70deg);
+  border-radius: 30%;
+  filter: blur(3rem);
+  opacity: 0.7;
+
+}
