@@ -4,3 +4,50 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Pricing */
+.pricing {
+  width: 100%;
+  height: 150vh;
+  margin-top: 30rem;
+}
+
+.pricing-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.pricing-rectangle {
+  width: 50rem;
+  height: 50rem;
+  background: linear-gradient(135deg, #184fbb, transparent 80%);
+  border-radius: 10rem;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: rotateZ(45deg);
+  opacity: 0.2;
+}
+
+.pricing-small-circle {
+  width: 8rem;
+  height: 8rem;
+  background-color: #34dd87;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+.pricing-large-circle {
+  width: 40rem;
+  height: 40rem;
+  background: linear-gradient(to right, transparent, #7118d6 90%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  opacity: .2;
+}
