@@ -1,0 +1,153 @@
+/* Custom Scroll Bar */
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#1d4fb3, #538cfd);
+}
+
+/* Account */
+.account {
+  width: 100%;
+  height: 120vh;
+  margin-top: 30rem;
+}
+
+.account-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.account-circle {
+  width: 70rem;
+  height: 70rem;
+  background: linear-gradient(to left, #65b1ff, transparent);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20%;
+  left: 33%;
+  opacity: 0.2;
+}
+
+.account-header {
+  text-align: center;
+}
+
+.account-header h1 {
+  font-family: 'Mooli', cursive;
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  color: #263b53;
+}
+
+.account-header h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #567599;
+  margin: 2rem 0 12rem 0;
+}
+
+.account-form-wrapper {
+  width: 50rem;
+  height: 50rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 8rem rgba(130, 162, 235, 0.3);
+  z-index: 10;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.account-form-wrapper > span {
+  width: 9rem;
+  height: 9rem;
+  background-color: #afc8ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: #3776ff;
+  margin-bottom: 3rem;
+}
+
+.account-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-inputs input{
+  width: 40rem;
+  height: 5rem;
+  background-color: #f0f2f4;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: .5rem 1rem;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.account-inputs input::placeholder {
+  color: #888;
+}
+
+.account-check {
+  margin: -2rem 0 3rem 0;
+}
+
+.account-check input {
+  cursor: pointer;
+}
+
+.account-check label {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #777;
+  cursor: pointer;
+}
+
+.account-form-wrapper button {
+  width: 100%;
+  height: 5rem;
+  background-color: #3776ff;
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin: 1.5rem 0;
+}
+
+.account-form-wrapper p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.account-form-wrapper p span {
+  color: #2371ff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-out {
+  width: 35rem;
+  height: 5rem;
+  background: linear-gradient(to right, #ff48bf, #ff3393);
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin-top: 4rem;
+}
