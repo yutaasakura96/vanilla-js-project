@@ -1,0 +1,6 @@
+/* Custom Scroll Bar */
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#1d4fb3, #538cfd);
+}
+
+/* Pricing */
