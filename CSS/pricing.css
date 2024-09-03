@@ -208,7 +208,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Responsive */
-@media (max-width: ) {
+@media (max-width: 1600px) {
   .pricing-small-circle {
     right: 10%;
   }
@@ -216,5 +216,11 @@ body::-webkit-scrollbar-thumb {
   .pricing-large-circle {
     right: 10%;
     bottom: 12%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .pricing-small-circle {
+    right: 7%;
   }
 }

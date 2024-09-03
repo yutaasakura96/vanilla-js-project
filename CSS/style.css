@@ -1548,3 +1548,29 @@ footer {
     margin-top: -1rem;
   }
 }
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 58%;
+  }
+
+  .nav-items {
+    width: 60%;
+  }
+
+  .services-wrapper {
+    width: 75%;
+  }
+
+  .filter-nav {
+    width: 85%;
+  }
+
+  .projects-list {
+    width: 85%;
+  }
+
+  .templates-left p {
+    width: 50rem;
+  }
+}

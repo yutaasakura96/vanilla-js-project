@@ -264,3 +264,19 @@ body::-webkit-scrollbar-thumb {
     font-size: 3.5rem;
   }
 }
+
+@media (max-width: 1440px) {
+  .products-content {
+    width: 70%;
+  }
+
+  .promo-rectangle {
+    top: 25%;
+    left: 8%;
+  }
+
+  .large-circle {
+    bottom: 25%;
+    right: 8%;
+  }
+}
