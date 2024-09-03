@@ -1620,3 +1620,124 @@ footer {
     font-size: 52%;
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 5rem;
+  }
+
+  .nav-items {
+    width: 65%;
+  }
+
+  .logo span:nth-child(1) {
+    font-size: 2.5rem;
+  }
+
+  .logo span:nth-child(1) span {
+    font-size: 1.5rem;
+  }
+
+  .logo span:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .banner {
+    top: 16%;
+    left: 18%;
+  }
+
+  .banner h1 {
+    font-size: 9rem;
+  }
+
+  .banner h3 {
+    font-size: 2rem;
+  }
+
+  .bg-main {
+    left: -25%;
+  }
+
+  .bg-1 {
+    right: -5%;
+  }
+
+  .bg-2 {
+    width: 60%;
+  }
+
+  .services {
+    height: 190vh;
+    margin: 15rem 0;
+  }
+
+  .services-bg-1 {
+    top: -15%;
+    right: 3%;
+    width: 60rem;
+    height: 60rem;
+  }
+
+  .services-bg-2 {
+    bottom: -12%;
+    left: 5%;
+    width: 60rem;
+    height: 60rem;
+  }
+
+  .services-list {
+    justify-content: space-evenly;
+  }
+
+  .templates-left {
+    padding: 25rem 10rem 0 5rem;
+  }
+
+  .templates-left h1 {
+    font-size: 5rem;
+  }
+
+  .templates-left p {
+    width: 45rem;
+    font-size: 1.5rem;
+  }
+
+  .templates-btn {
+    width: 27rem;
+    height: 5.5rem;
+    font-size: 1.6rem;
+  }
+
+  .templates-right img:nth-child(1) {
+    top: 45%;
+    width: 25rem;
+  }
+
+  .templates-right img:nth-child(2) {
+    top: 25%;
+    left: 20%;
+    width: 14rem;
+  }
+
+  .templates-right img:nth-child(3) {
+    top: 27%;
+    width: 40rem;
+  }
+
+  .play-btn {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .play-btn::before {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .templates::before {
+    width: 60rem;
+    height: 60rem;
+    bottom: 10%;
+  }
+}

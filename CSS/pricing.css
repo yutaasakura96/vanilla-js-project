@@ -224,3 +224,30 @@ body::-webkit-scrollbar-thumb {
     right: 7%;
   }
 }
+
+@media (max-width: 1024px) {
+  .pricing-card {
+    width: 40rem;
+  }
+
+  .pricing-rectangle {
+    top: 28%;
+    left: 5%;
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .pricing-large-circle {
+    top: 10%;
+    left: 5%;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .pricing-large-circle {
+    top: 26%;
+    left: 5%;
+    width: 6rem;
+    height: 6rem;
+  }
+}
