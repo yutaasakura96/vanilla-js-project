@@ -280,3 +280,43 @@ body::-webkit-scrollbar-thumb {
     right: 8%;
   }
 }
+
+@media (max-width: 1336px) {
+  .products-content-right img:nth-child(1) {
+    width: 30rem;
+    height: 60rem;
+    top: 45%;
+    right: 13%;
+  }
+
+  .products-content-right img:nth-child(2) {
+    width: 17rem;
+    top: 20%;
+    right: 29%;
+  }
+
+  .products-content-right img:nth-child(3) {
+    width: 26rem;
+    bottom: 28%;
+    right: 3%;
+  }
+
+  .products-content {
+    width: 60%;
+    height: 40rem;
+  }
+
+  .promo-content h1 {
+    font-size: 3rem;
+  }
+  .animate .large-circle {
+    transform: scale(1.3);
+  }
+
+  .promo-shadow {
+    bottom: -14%;
+  }
+  .animate .promo-shadow {
+    bottom: -17%;
+  }
+}

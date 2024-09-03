@@ -1574,3 +1574,49 @@ footer {
     width: 50rem;
   }
 }
+
+@media (max-width: 1336px) {
+  html {
+    font-size: 56%;
+  }
+
+  .project {
+    width: 30rem;
+  }
+
+  .project img:nth-child(1) {
+    width: 19rem;
+  }
+
+  .project img:nth-child(2) {
+    width: 17rem;
+    left: 0;
+  }
+
+  .project img:nth-child(3) {
+    width: 90%;
+    right: 0;
+  }
+
+  .templates-right img:nth-child(1) {
+    width: 30rem;
+    top: 45%;
+  }
+
+  .templates-right img:nth-child(2) {
+    width: 17rem;
+  }
+
+  .templates::before {
+    width: 70rem;
+    height: 70rem;
+    bottom: 0;
+    right: 8%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 52%;
+  }
+}
