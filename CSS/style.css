@@ -1506,3 +1506,45 @@ footer {
   font-size: 2rem;
   color: #007aaa;
 }
+
+
+/* Responsive */
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 60%;
+  }
+
+  .navbar {
+    padding: 0 10rem;
+  }
+
+  .nav-items {
+    width: 55%;
+  }
+
+  .dropdown {
+    top: 4.5rem;
+  }
+
+  .services-wrapper {
+    width: 70%;
+  }
+
+.projects-list {
+    width: 80%;
+  }
+
+  .templates-right img:nth-child(1) {
+    top: 45%;
+    width: 35rem;
+  }
+
+  .templates-right img:nth-child(3) {
+    width: 35rem;
+  }
+
+  .subscribe {
+    margin-top: -1rem;
+  }
+}

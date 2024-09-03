@@ -115,3 +115,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
   color: #4d6c6d;
 }
+
+/* Responsive */
+
+@media (max-width: 1600px) {
+  .testimonials-wrapper {
+    width: 90%;
+  }
+}

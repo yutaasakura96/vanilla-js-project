@@ -253,3 +253,14 @@ body::-webkit-scrollbar-thumb {
   filter: blur(2.5rem);
   opacity: 0.9;
 }
+
+/* Responsive */
+@media (max-width: 1600px) {
+  .products-content {
+    width: 90%;
+  }
+
+  .products-content h1 {
+    font-size: 3.5rem;
+  }
+}
