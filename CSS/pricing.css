@@ -104,3 +104,105 @@ body::-webkit-scrollbar-thumb {
 .pricing-trustpilot span:nth-child(2) {
   font-size: 2rem;
 }
+
+.pricing-cards {
+  display: flex;
+  perspective: 50rem;
+}
+
+.pricing-card {
+  width: 45rem;
+  height: 70rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 10rem rgba(130, 162, 235, 0.4);
+  z-index: 10;
+  margin: 0 1.5rem;
+  padding: 4rem 6rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing-card-right {
+  transform: rotateZ(5rem);
+}
+
+.pricing-card-top h3 {
+  font-family: 'Mooli', cursive;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card-left .pricing-card-top h3,
+.pricing-card-left .pricing-card-top h1 {
+  background: linear-gradient(to right, #44a1fd, #0b3fa8 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.pricing-card-right .pricing-card-top h3,
+.pricing-card-right .pricing-card-top h1 {
+  background: linear-gradient(to right, #ca6eff, #7118d6 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.pricing-card-top h1 {
+  font-family: 'Mooli', cursive;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card-stars {
+  margin-bottom: 4rem;
+}
+
+.pricing-card-stars span {
+  color: #03b57f;
+}
+
+.pricing-card-list {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.pricing-card-list li {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #567599;
+  margin: 1.5rem 0;
+}
+
+.pricing-card-list li:nth-child(5) {
+  color: #03b57f;
+}
+
+.pricing-card-left .pricing-card-list li:last-child {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.pricing-card-btn {
+  width: 120%;
+  height: 6rem;
+  border: none;
+  border-radius: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .2rem;
+  cursor: pointer;
+}
+
+.pricing-card-left .pricing-card-btn{
+  background: linear-gradient(to right, #44a1fd, #0b3fa8 90%);
+}
+
+.pricing-card-right .pricing-card-btn{
+  background: linear-gradient(to right, #ca6eff, #7118d6 90%);
+}
