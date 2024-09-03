@@ -133,3 +133,14 @@ body::-webkit-scrollbar-thumb {
     width: 32rem;
   }
 }
+
+@media (max-width: 820px) {
+  .testimonials-header h1 {
+    width: 80%;
+    font-size: 4.7rem;
+  }
+
+  .stars {
+    right: 12%;
+  }
+}

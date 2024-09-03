@@ -151,3 +151,17 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   margin-top: 4rem;
 }
+
+/* Responsive */
+@media (max-width: 820px) {
+  .account {
+    height: 100vh;
+  }
+
+  .account-circle {
+    width: 65rem;
+    height: 65rem;
+    bottom: 39%;
+    left: 23%;
+  }
+}

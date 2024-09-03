@@ -238,16 +238,53 @@ body::-webkit-scrollbar-thumb {
   }
 
   .pricing-large-circle {
-    top: 10%;
-    left: 5%;
+    bottom: 10%;
+    right: 5%;
     width: 30rem;
     height: 30rem;
   }
 
-  .pricing-large-circle {
+  .pricing-small-circle {
     top: 26%;
-    left: 5%;
+    right: 5%;
     width: 6rem;
     height: 6rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .pricing {
+    height: 120vh;
+  }
+
+  .pricing-rectangle {
+    left: -3%;
+    top: 25%;
+  }
+
+  .pricing-small-circle {
+    width: 6rem;
+    height: 6rem;
+    top: 25%;
+    right: 1%;
+  }
+
+  .pricing-large-circle {
+    width: 40rem;
+    height: 40rem;
+    bottom: 25%;
+    right: -5%;
+  }
+
+  .pricing-header {
+    width: 80rem;
+  }
+
+  .pricing-cards {
+    perspective: none;
+  }
+
+  .pricing-card-right {
+    transform: translateZ(0);
   }
 }

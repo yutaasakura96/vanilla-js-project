@@ -1914,6 +1914,10 @@ footer {
     transform: translateY(-50%);
   }
 
+  .icon-pages .line {
+    background-color: #092627;
+  }
+
   .line {
     width: 100%;
     height: 0.4rem;
@@ -1935,5 +1939,101 @@ footer {
 
   .hamburger .line-2 {
     transform: rotate(-45deg) translateY(-1.2rem);
+  }
+
+  header {
+    height: 70vh;
+  }
+
+  .bg-main {
+    width: 250%;
+    top: -105%;
+    left: -50%;
+  }
+
+  .bg-1 {
+    right: -10%;
+  }
+
+  .bg-2 {
+    right: 10%;
+  }
+
+  .services {
+    height: 120vh;
+  }
+
+  .services-wrapper {
+    z-index: 10;
+  }
+
+  .services .bg-1 {
+    top: -20%;
+    right: -5%;
+  }
+
+  .services-bg-2 {
+    left: 0;
+  }
+
+  .filter-nav {
+    width: 90%;
+  }
+
+  .filter-nav-link {
+    width: 12rem;
+    height: 4.5rem;
+  }
+
+  .projects-list {
+    width: 90%;
+  }
+
+  .templates {
+    height: 90vh;
+    margin-bottom: -1rem;
+  }
+
+  .templates-left {
+    left: 5%;
+    padding: 12rem 10rem 0 10rem;
+  }
+
+  .templates-right img:nth-child(1) {
+    width: 30rem;
+    top: 70%;
+  }
+
+  .templates-right img:nth-child(2) {
+    width: 18rem;
+    top: 52%;
+    left: -15%;
+  }
+
+  .templates-right img:nth-child(3) {
+    width: 48rem;
+    top: 57%;
+  }
+
+  .templates::before {
+    width: 60rem;
+    height: 60rem;
+    bottom: -5%;
+    right: 5%;
+    background: linear-gradient(to bottom, transparent, #8430ea, #863ce0);
+  }
+
+  .play-btn {
+    top: 60%;
+    left: -8%;
+  }
+
+  footer {
+    height: 40vh;
+    padding: 6rem 0 3rem 0;
+  }
+
+  .footer-social-media {
+    width: 35%;
   }
 }
