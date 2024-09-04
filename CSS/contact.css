@@ -225,3 +225,40 @@ body::-webkit-scrollbar-thumb {
     height: 67rem;
   }
 }
+
+@media (max-width: 430px) {
+  .contact {
+    height: 180vh;
+  }
+
+  .contact-header h1 {
+    font-size: 4rem;
+  }
+
+  .contact-header h3 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 2rem auto 15rem auto;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-wrapper {
+    margin: 0 3rem 10rem 3rem;
+  }
+
+
+  .contact-circle {
+    bottom: 30%;
+    left: 3%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact {
+    height: 220vh;
+  }
+}

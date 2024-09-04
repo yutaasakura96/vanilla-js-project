@@ -288,3 +288,59 @@ body::-webkit-scrollbar-thumb {
     transform: translateZ(0);
   }
 }
+
+@media (max-width: 768px) {
+  .pricing-rectangle {
+    top: 30%;
+    left: -6%;
+  }
+
+  .pricing-large-circle {
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 430px) {
+  .pricing {
+    height: 180vh;
+  }
+
+  .pricing-header h1 {
+    font-size: 4rem;
+    width: 50rem;
+    margin: auto;
+  }
+
+  .pricing-header h3 {
+    font-size: 2rem;
+    width: 50rem;
+    margin: 2rem auto;
+  }
+
+  .pricing-rectangle {
+    top: 20%
+  }
+
+  .pricing-small-circle {
+    top: 17%;
+    right: 5%;
+  }
+
+  .pricing-large-circle {
+    bottom: 8%;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    margin: 0 1.5rem 10rem 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .pricing {
+    height: 250vh;
+  }
+}
