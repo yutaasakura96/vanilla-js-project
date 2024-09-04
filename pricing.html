@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Website</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/products.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pricing.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -194,7 +194,7 @@
             <a href="products.html" class="nav-link">Products</a>
             <!-- Dropdown 3 -->
             <div class="dropdown dropdown-3">
-              <div class="d-products">
+              <div class="products">
                 <div class="product">
                   <i class="fa-solid fa-wrench"></i>
                   <div>
@@ -291,43 +291,81 @@
         </ul>
       </nav>
 
-      <!-- Products -->
-      <section class="products">
-        <div class="products-wrapper">
-          <div class="products-header">
-            <h1>Themes & Plugins</h1>
-            <h3>Build The Most Popular Themes and Plugins in the World</h3>
+      <!-- Pricing -->
+      <section class="pricing">
+        <div class="pricing-wrapper">
+          <div class="pricing-shapes">
+            <div class="pricing-rectangle"></div>
+            <div class="pricing-small-circle"></div>
+            <div class="pricing-large-circle"></div>
           </div>
-          <div class="products-content">
-            <div class="products-content-left">
-              <h1>Build</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, culpa reiciendis
-                eum ipsum odio quia. Sapiente harum molestias dolor eveniet cupiditate, id maiores
-                consectetur officiis, deserunt ipsum quia natus nulla.
-              </p>
-              <button type="button" class="products-btn">Learn About Us</button>
-            </div>
-            <div class="products-content-right">
-              <img src="../images/web2-img1.png" />
-              <img src="../images/web2-img2.png" />
-              <img src="../images/web2-img3.png" />
+          <div class="pricing-header">
+            <h1>Simple Pricing</h1>
+            <h1>Complete Access. Unlimited Websites</h1>
+            <h3>
+              Join 100,000+ customers and get access to unlimited websites. Modern themes and
+              plugins. The ultimate website builder
+            </h3>
+            <div class="reviews">
+              <p>Excellent</p>
+              <div class="pricing-stars">
+                <span class="material-symbols-rounded"> star </span>
+                <span class="material-symbols-rounded"> star </span>
+                <span class="material-symbols-rounded"> star </span>
+                <span class="material-symbols-rounded"> star </span>
+                <span class="material-symbols-rounded"> star </span>
+              </div>
+              <p>reviews on</p>
+              <div class="pricing-trustpilot">
+                <span class="material-symbols-rounded"> hotel_class </span>
+                <span>Trustpilot</span>
+              </div>
             </div>
           </div>
-          <div class="products-promo">
-            <div class="products-promo-shapes">
-              <div class="promo-rectangle"></div>
-              <div class="small-circle"></div>
-              <div class="large-circle"></div>
+          <div class="pricing-cards">
+            <div class="pricing-card pricing-card-left">
+              <div class="pricing-card-top">
+                <h3>Yearly Access</h3>
+                <h1>$99.99</h1>
+                <div class="pricing-card-stars">
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                </div>
+              </div>
+              <ul class="pricing-card-list">
+                <li>Hundreds of Website Packs</li>
+                <li>Product Updates</li>
+                <li>Premium Support</li>
+                <li>Unlimited Website Usage</li>
+                <li>Risk Free Guarantee</li>
+                <li>One Time Fee</li>
+              </ul>
+              <button type="button" class="pricing-card-btn">Sign Up Today</button>
             </div>
-            <div class="promo-content">
-              <h1>
-                100,000+ Clients are already building awesome and modern websites with Code And
-                Create. Join the most empowered community
-              </h1>
-              <button type="button">Sign Up Today</button>
-              <p>We offer a 30 day money back guarantee, so join us!</p>
-              <div class="promo-shadow"></div>
+            <div class="pricing-card pricing-card-right">
+              <div class="pricing-card-top">
+                <h3>Lifetime Access</h3>
+                <h1>$249.99</h1>
+                <div class="pricing-card-stars">
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                  <span class="material-symbols-rounded"> hotel_class </span>
+                </div>
+              </div>
+              <ul class="pricing-card-list">
+                <li>Hundreds of Website Packs</li>
+                <li>Lifetime Product Updates</li>
+                <li>Lifetime Premium Support</li>
+                <li>Unlimited Website Usage</li>
+                <li>Risk Free Guarantee</li>
+                <li>One Time Fee</li>
+              </ul>
+              <button type="button" class="pricing-card-btn">Sign Up Today</button>
             </div>
           </div>
         </div>
@@ -385,8 +423,6 @@
         </div>
       </footer>
     </div>
-
-    <script src="../JS/products.js"></script>
-    <script src="../JS/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
